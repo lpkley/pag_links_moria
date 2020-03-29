@@ -1,0 +1,122 @@
+.home{
+  background-color:#e9ebee;
+}
+
+.logomoria{
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #dadde1;
+    border-radius: 50%;
+    margin: 30px 0 50px 0;
+}
+
+#moriacont{
+  margin-top: -40px;
+  font-family:'Playfair Display', serif;
+  font-size: 12pt;
+}
+
+#moriacontabeiss{
+  margin-bottom: 35px;
+}
+
+
+@media (max-width: 992px) {
+  .logomoria{
+    width: 170px;
+  }
+  #moriacont{
+    font-size: 11pt;
+  }
+}
+
+.icons{
+  width: 35px;
+}
+
+.conteudo{
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+#apoio{
+
+  margin-bottom: 10px;
+
+}
+
+/* botao e hover */
+
+.botao {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: 26px;
+  border-left: solid 1px;
+  border-color: #232323;
+  width: 200px;
+  text-decoration: none;
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 14pt;
+  
+}
+.botao:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(63, 63, 63);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.botao:hover, .botao:focus, .botao:active {
+  color: white;
+}
+.botao:hover:before, .botao:focus:before, .botao:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.botao:hover{
+  text-decoration: none;
+}
+
+.bt1{
+  color: green;
+}
+
+
+/*  
+footer
+ */
+
+.footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
